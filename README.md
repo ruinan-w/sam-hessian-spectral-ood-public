@@ -1,8 +1,8 @@
-﻿# Beyond Scalar Flatness: Hessian Spectral Diagnostics for SAM-Style OOD Robustness
+# Beyond Scalar Flatness: Hessian Spectral Diagnostics for SAM-Style OOD Robustness
 
 This repository contains the public research code and processed results for the ICONIP 2026 submission:
 
-**Beyond Scalar Flatness: A Hessian Spectral View of SAM-Style OOD Robustness in Residual CIFAR Classifiers**
+**Beyond Scalar Flatness: Hessian Spectral Diagnostics for SAM-Style OOD Robustness**
 
 The project studies whether SAM-style optimization improves corruption robustness in residual CIFAR classifiers, and whether the effect is better described by Hessian spectral geometry than by a scalar dominant-eigenvalue flatness measure alone. The processed results cover CIFAR-10-C and CIFAR-100-C evaluations for ResNet-18, plus a ResNet-34 CIFAR-10-C validation setting.
 
@@ -102,23 +102,21 @@ To regenerate a processed result package from completed experiment outputs, use:
 python scripts/generate_iconip_results_package.py
 ```
 
-This script expects completed training, CIFAR-C evaluation, and Hessian output files under `outputs/`. The public repository intentionally does not include checkpoints, raw logs, or datasets.
+This script expects completed training, CIFAR-C evaluation, and Hessian output files under `outputs/`. The public repository intentionally does not include checkpoints, raw logs, datasets, private manuscript drafts, or supplementary-preparation files.
 
 ## Citation
 
-If you use this code or processed results, please cite the paper. A BibTeX entry will be added after publication.
+If you use this code or processed results, please cite the paper. A final BibTeX entry will be added after publication.
 
 ```bibtex
-@inproceedings{wang2026hessiansamood,
-  title     = {Beyond Scalar Flatness: A Hessian Spectral View of SAM-Style OOD Robustness in Residual CIFAR Classifiers},
-  author    = {Wang, Ruinan},
-  booktitle = {Proceedings of ICONIP},
-  year      = {2026},
-  note      = {To appear}
+@misc{wang2026hessiansamood,
+  title        = {Beyond Scalar Flatness: Hessian Spectral Diagnostics for SAM-Style OOD Robustness},
+  author       = {Wang, Ruinan and Hu, Yaru and Qiao, Di},
+  year         = {2026},
+  note         = {ICONIP 2026 submission}
 }
 ```
 
 ## Release Note
 
 This public release contains code and processed results corresponding to the ICONIP 2026 submission. It is intentionally minimal: checkpoints, datasets, raw logs, intermediate analysis folders, private manuscript drafts, and supplementary-preparation files are excluded.
-
