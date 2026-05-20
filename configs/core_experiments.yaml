@@ -1,0 +1,36 @@
+﻿# Reference settings for the ICONIP 2026 submission.
+# These settings document the runs represented by the processed results.
+
+seeds: [42, 43, 44]
+optimizers: [sgd, sam, asam]
+training:
+  epochs: 100
+  batch_size: 128
+  learning_rate: 0.1
+  momentum: 0.9
+  weight_decay: 0.0005
+  scheduler: cosine
+  sam_rho: 0.05
+  asam_rho: 0.5
+  asam_eta: 0.01
+core_settings:
+  - dataset: cifar10
+    ood_dataset: cifar10-c
+    model: resnet18
+  - dataset: cifar100
+    ood_dataset: cifar100-c
+    model: resnet18
+  - dataset: cifar10
+    ood_dataset: cifar10-c
+    model: resnet34
+cifarc_evaluation:
+  corruptions: all_15_standard_cifarc_corruptions
+  severities: [1, 2, 3, 4, 5]
+hessian:
+  subset_size: 1024
+  batch_size: 128
+  power_iterations: 20
+  trace_samples: 20
+  participation_ratio_probes: 20
+  lanczos_top_k: 20
+  lanczos_steps: 30

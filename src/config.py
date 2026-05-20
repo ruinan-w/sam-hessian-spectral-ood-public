@@ -1,0 +1,25 @@
+﻿from pathlib import Path
+
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
+
+DATA_ROOT = PROJECT_ROOT / "data"
+CIFAR10C_ROOT = DATA_ROOT / "CIFAR-10-C"
+
+CHECKPOINT_DIR = PROJECT_ROOT / "checkpoints"
+RESULTS_DIR = PROJECT_ROOT / "results"
+LOGS_DIR = PROJECT_ROOT / "logs"
+
+MODEL_NAME = "resnet18"
+NUM_CLASSES = 10
+
+BATCH_SIZE = 128
+NUM_WORKERS = 2
+NUM_EPOCHS = 100
+
+LEARNING_RATE = 0.1
+MOMENTUM = 0.9
+WEIGHT_DECAY = 5e-4
+
+SAM_RHO = 0.05
+
+SEED = 42

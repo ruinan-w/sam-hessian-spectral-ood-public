@@ -1,0 +1,186 @@
+﻿Clean public repository audit
+
+Public folder: D:\Study\2026s1\comp5329\asm2\sam-hessian-spectral-ood-public
+Original project: D:\Study\2026s1\comp5329\asm2\Project
+
+Created required top-level structure: yes
+- README.md: yes
+- LICENSE: yes (MIT)
+- requirements.txt: yes
+- .gitignore: yes
+- configs/: yes
+- scripts/: yes
+- src/: yes
+- results/: yes
+- figures/: yes
+- docs/: yes
+
+File counts:
+- total_files_after_audit: 64
+- source_files_copied: 57
+- src_files: 19
+- script_files: 14
+- result_files: 12
+- figure_files: 12
+
+Included source categories:
+- Core model/data/optimizer/Hessian source under src/.
+- Training, CIFAR-C evaluation, Hessian computation, batch-running, result collection, and figure/analysis scripts under scripts/.
+- Final cleaned CSV result tables under results/.
+- Final paper figures under figures/.
+- Reference experiment settings and reproducibility notes under configs/ and docs/.
+
+Excluded categories:
+- Checkpoints and binary model weights (.pt, .pth, .ckpt, .bin).
+- Raw datasets and downloaded archives.
+- Virtual environments, caches, pyc files, notebooks checkpoints, raw logs, and generated outputs.
+- Old unused modules, smoke-test artifacts, draft/manuscript/Overleaf assets, supplementary-preparation files, and private process/audit bundles not needed for reproduction.
+
+Large files found in original project and excluded (>50 MB):
+- data/CIFAR-100-C.tar (2783.3 MB)
+- data/CIFAR-10-C.tar (2783.3 MB)
+- .venv/Lib/site-packages/torch/lib/torch_cuda.dll (774.0 MB)
+- .venv/Lib/site-packages/torch/lib/cublasLt64_12.dll (643.4 MB)
+- .venv/Lib/site-packages/torch/lib/cudnn_engines_precompiled64_9.dll (458.7 MB)
+- .venv/Lib/site-packages/torch/lib/cusparse64_12.dll (362.0 MB)
+- .venv/Lib/site-packages/torch/lib/cufft64_11.dll (263.3 MB)
+- .venv/Lib/site-packages/torch/lib/cudnn_adv64_9.dll (256.6 MB)
+- .venv/Lib/site-packages/torch/lib/torch_cpu.dll (253.6 MB)
+- .venv/Lib/site-packages/torch/lib/cusolver64_11.dll (215.2 MB)
+- data/cifar-10-python.tar.gz (162.6 MB)
+- outputs/checkpoints/smoke_arch_cifar10_resnet34_sgd_seed999_ep1.pt (162.5 MB)
+- outputs/checkpoints/ei_arch_cifar10_resnet34_asam_seed42_ep100.pt (162.5 MB)
+- outputs/checkpoints/ei_arch_cifar10_resnet34_asam_seed43_ep100.pt (162.5 MB)
+- outputs/checkpoints/ei_arch_cifar10_resnet34_asam_seed44_ep100.pt (162.5 MB)
+- outputs/checkpoints/ei_arch_cifar10_resnet34_sam_seed42_ep100.pt (162.5 MB)
+- outputs/checkpoints/ei_arch_cifar10_resnet34_sam_seed43_ep100.pt (162.5 MB)
+- outputs/checkpoints/ei_arch_cifar10_resnet34_sam_seed44_ep100.pt (162.5 MB)
+- outputs/checkpoints/ei_arch_cifar10_resnet34_sgd_seed42_ep100.pt (162.5 MB)
+- outputs/checkpoints/ei_arch_cifar10_resnet34_sgd_seed43_ep100.pt (162.5 MB)
+- outputs/checkpoints/ei_arch_cifar10_resnet34_sgd_seed44_ep100.pt (162.5 MB)
+- data/cifar-100-python.tar.gz (161.2 MB)
+- .venv/Lib/site-packages/torch/lib/cusolverMg64_11.dll (149.8 MB)
+- data/cifar-100-python/train (148.1 MB)
+- data/CIFAR-10-C/brightness.npy (146.5 MB)
+- data/CIFAR-10-C/contrast.npy (146.5 MB)
+- data/CIFAR-10-C/defocus_blur.npy (146.5 MB)
+- data/CIFAR-10-C/elastic_transform.npy (146.5 MB)
+- data/CIFAR-10-C/fog.npy (146.5 MB)
+- data/CIFAR-10-C/frost.npy (146.5 MB)
+- data/CIFAR-10-C/gaussian_blur.npy (146.5 MB)
+- data/CIFAR-10-C/gaussian_noise.npy (146.5 MB)
+- data/CIFAR-10-C/glass_blur.npy (146.5 MB)
+- data/CIFAR-10-C/impulse_noise.npy (146.5 MB)
+- data/CIFAR-10-C/jpeg_compression.npy (146.5 MB)
+- data/CIFAR-10-C/motion_blur.npy (146.5 MB)
+- data/CIFAR-10-C/pixelate.npy (146.5 MB)
+- data/CIFAR-10-C/saturate.npy (146.5 MB)
+- data/CIFAR-10-C/shot_noise.npy (146.5 MB)
+- data/CIFAR-10-C/snow.npy (146.5 MB)
+- data/CIFAR-10-C/spatter.npy (146.5 MB)
+- data/CIFAR-10-C/speckle_noise.npy (146.5 MB)
+- data/CIFAR-10-C/zoom_blur.npy (146.5 MB)
+- data/CIFAR-100-C/brightness.npy (146.5 MB)
+- data/CIFAR-100-C/contrast.npy (146.5 MB)
+- data/CIFAR-100-C/defocus_blur.npy (146.5 MB)
+- data/CIFAR-100-C/elastic_transform.npy (146.5 MB)
+- data/CIFAR-100-C/fog.npy (146.5 MB)
+- data/CIFAR-100-C/frost.npy (146.5 MB)
+- data/CIFAR-100-C/gaussian_blur.npy (146.5 MB)
+- data/CIFAR-100-C/gaussian_noise.npy (146.5 MB)
+- data/CIFAR-100-C/glass_blur.npy (146.5 MB)
+- data/CIFAR-100-C/impulse_noise.npy (146.5 MB)
+- data/CIFAR-100-C/jpeg_compression.npy (146.5 MB)
+- data/CIFAR-100-C/motion_blur.npy (146.5 MB)
+- data/CIFAR-100-C/pixelate.npy (146.5 MB)
+- data/CIFAR-100-C/saturate.npy (146.5 MB)
+- data/CIFAR-100-C/shot_noise.npy (146.5 MB)
+- data/CIFAR-100-C/snow.npy (146.5 MB)
+- data/CIFAR-100-C/spatter.npy (146.5 MB)
+- data/CIFAR-100-C/speckle_noise.npy (146.5 MB)
+- data/CIFAR-100-C/zoom_blur.npy (146.5 MB)
+- outputs/checkpoints/smoke_vgg_cifar10_vgg16_bn_sgd_seed999_ep1.pt (114.5 MB)
+- outputs/checkpoints/ei_vgg_cifar10_vgg16_bn_asam_seed42_ep100.pt (114.5 MB)
+- outputs/checkpoints/ei_vgg_cifar10_vgg16_bn_sam_seed42_ep100.pt (114.5 MB)
+- outputs/checkpoints/ei_vgg_cifar10_vgg16_bn_sgd_seed42_ep100.pt (114.5 MB)
+- .venv/Lib/site-packages/torch/lib/cublas64_12.dll (108.4 MB)
+- .venv/Lib/site-packages/torch/lib/cudnn_ops64_9.dll (100.7 MB)
+- outputs/checkpoints/smoke_cifar100_sgd_seed999_ep1_v2.pt (85.7 MB)
+- outputs/checkpoints/ei100_cifar100_asam_seed42_ep100.pt (85.7 MB)
+- outputs/checkpoints/ei100_cifar100_asam_seed43_ep100.pt (85.7 MB)
+- outputs/checkpoints/ei100_cifar100_asam_seed44_ep100.pt (85.7 MB)
+- outputs/checkpoints/ei100_cifar100_sam_seed42_ep100.pt (85.7 MB)
+- outputs/checkpoints/ei100_cifar100_sam_seed43_ep100.pt (85.7 MB)
+- outputs/checkpoints/ei100_cifar100_sam_seed44_ep100.pt (85.7 MB)
+- outputs/checkpoints/ei100_cifar100_sgd_seed42_ep100.pt (85.7 MB)
+- outputs/checkpoints/ei100_cifar100_sgd_seed43_ep100.pt (85.7 MB)
+- outputs/checkpoints/ei100_cifar100_sgd_seed44_ep100.pt (85.7 MB)
+- outputs/trajectory_smoke_20260518_024402/checkpoints/smoke_traj_cifar10_resnet18_sgd_seed42_epoch1.pt (85.4 MB)
+- outputs/trajectory_minimal_20260518_024840/checkpoints/traj_cifar10_resnet18_asam_seed42_epoch100.pt (85.4 MB)
+- outputs/trajectory_minimal_20260518_024840/checkpoints/traj_cifar10_resnet18_asam_seed42_epoch20.pt (85.4 MB)
+- outputs/trajectory_minimal_20260518_024840/checkpoints/traj_cifar10_resnet18_asam_seed42_epoch40.pt (85.4 MB)
+- outputs/trajectory_minimal_20260518_024840/checkpoints/traj_cifar10_resnet18_asam_seed42_epoch60.pt (85.4 MB)
+- outputs/trajectory_minimal_20260518_024840/checkpoints/traj_cifar10_resnet18_asam_seed42_epoch80.pt (85.4 MB)
+- outputs/trajectory_minimal_20260518_024840/checkpoints/traj_cifar10_resnet18_sam_seed42_epoch100.pt (85.4 MB)
+- outputs/trajectory_minimal_20260518_024840/checkpoints/traj_cifar10_resnet18_sgd_seed42_epoch100.pt (85.4 MB)
+- outputs/trajectory_minimal_20260518_024840/checkpoints/traj_cifar10_resnet18_sam_seed42_epoch20.pt (85.4 MB)
+- outputs/trajectory_minimal_20260518_024840/checkpoints/traj_cifar10_resnet18_sam_seed42_epoch40.pt (85.4 MB)
+- outputs/trajectory_minimal_20260518_024840/checkpoints/traj_cifar10_resnet18_sam_seed42_epoch60.pt (85.4 MB)
+- outputs/trajectory_minimal_20260518_024840/checkpoints/traj_cifar10_resnet18_sam_seed42_epoch80.pt (85.4 MB)
+- outputs/trajectory_minimal_20260518_024840/checkpoints/traj_cifar10_resnet18_sgd_seed42_epoch20.pt (85.4 MB)
+- outputs/trajectory_minimal_20260518_024840/checkpoints/traj_cifar10_resnet18_sgd_seed42_epoch40.pt (85.4 MB)
+- outputs/trajectory_minimal_20260518_024840/checkpoints/traj_cifar10_resnet18_sgd_seed42_epoch60.pt (85.4 MB)
+- outputs/trajectory_minimal_20260518_024840/checkpoints/traj_cifar10_resnet18_sgd_seed42_epoch80.pt (85.4 MB)
+- outputs/checkpoints/overnight_sam_seed42_ep30.pt (85.4 MB)
+- outputs/checkpoints/overnight_sam_seed43_ep30.pt (85.4 MB)
+- outputs/checkpoints/overnight_sam_seed44_ep30.pt (85.4 MB)
+- outputs/checkpoints/overnight_sgd_seed42_ep30.pt (85.4 MB)
+- outputs/checkpoints/overnight_sgd_seed43_ep30.pt (85.4 MB)
+- outputs/checkpoints/overnight_sgd_seed44_ep30.pt (85.4 MB)
+- outputs/trajectory_smoke_20260518_024402/checkpoints/smoke_traj_cifar10_resnet18_sgd_seed42.pt (85.4 MB)
+- outputs/checkpoints/smoke_ei_cifar10_asam_seed999_ep1_v2.pt (85.4 MB)
+- outputs/trajectory_minimal_20260518_024840/checkpoints/traj_cifar10_resnet18_asam_seed42.pt (85.3 MB)
+- outputs/checkpoints/smoke_ei_cifar10_asam_seed999_ep1.pt (85.3 MB)
+- outputs/trajectory_minimal_20260518_024840/checkpoints/traj_cifar10_resnet18_sam_seed42.pt (85.3 MB)
+- outputs/trajectory_minimal_20260518_024840/checkpoints/traj_cifar10_resnet18_sgd_seed42.pt (85.3 MB)
+- outputs/checkpoints/ei100_cifar10_asam_seed42_ep100.pt (85.3 MB)
+- outputs/checkpoints/ei100_cifar10_asam_seed43_ep100.pt (85.3 MB)
+- outputs/checkpoints/ei100_cifar10_asam_seed44_ep100.pt (85.3 MB)
+- outputs/checkpoints/ei100_cifar10_sam_seed42_ep100.pt (85.3 MB)
+- outputs/checkpoints/ei100_cifar10_sam_seed43_ep100.pt (85.3 MB)
+- outputs/checkpoints/ei100_cifar10_sam_seed44_ep100.pt (85.3 MB)
+- outputs/checkpoints/ei100_cifar10_sgd_seed42_ep100.pt (85.3 MB)
+- outputs/checkpoints/ei100_cifar10_sgd_seed43_ep100.pt (85.3 MB)
+- outputs/checkpoints/ei100_cifar10_sgd_seed44_ep100.pt (85.3 MB)
+- outputs/checkpoints/smoke_sgd_seed999_ep1.pt (85.3 MB)
+- outputs/checkpoints/minimal_sam_seed42.pt (85.3 MB)
+- outputs/checkpoints/minimal_sgd_seed42.pt (85.3 MB)
+- .venv/Lib/site-packages/torch/lib/nvrtc64_120_0.alt.dll (82.8 MB)
+- .venv/Lib/site-packages/torch/lib/nvrtc64_120_0.dll (82.7 MB)
+- .venv/Lib/site-packages/torch/lib/nvJitLink_120_0.dll (74.3 MB)
+- .venv/Lib/site-packages/torch/lib/curand64_10.dll (68.6 MB)
+- .venv/Lib/site-packages/torch/lib/cudnn_heuristic64_9.dll (56.1 MB)
+
+Large files remaining in public folder (>50 MB):
+- None.
+
+Forbidden file/path check in public folder:
+- No checkpoints, model binaries, pyc caches, virtual environments, raw log folders, Overleaf folders, old_unused files, or process-named paths were found.
+
+String scan for manual review:
+- Sensitive-string scan used the release checklist terms.
+- No release-checklist sensitive strings remain in public files.
+
+Known reproducibility limitation:
+- Full reruns require datasets and checkpoints generated by training. These are intentionally excluded from the public repository. The repository includes runnable scripts and processed paper results, but not raw experiment outputs.
+
+Final status: clean for public GitHub release, subject to normal author review before publishing.
+
+
+Final PDF follow-up check:
+- Checked against iconip (2).pdf dated 2026-05-20 16:02:52.
+- Added trajectory_analysis_table.csv to results/.
+- Replaced figures/ contents with final-paper-aligned experimental figures final_fig2 through final_fig6.
+- No standalone source asset for final PDF Figure 1 was found; Figure 1 is a conceptual manuscript diagram.
+- Re-ran release-string scan after the update: no matches.
+- Re-ran large-file scan after the update: no files above 50 MB.
